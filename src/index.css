@@ -7,6 +7,9 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 @layer components {
+  .grid-container {
+    @apply grid grid-cols-1 gap-y-10 sm:grid-cols-2 md:grid-cols-2  gap-x-6 lg:grid-cols-3;
+  }
   .section {
     @apply py-24 px-0;
   }
@@ -17,7 +20,7 @@ html {
     @apply items-center hidden space-x-6 lg:flex uppercase text-xl;
   }
   .nav-link {
-    @apply tracking-wide font-extrabold transition-colors duration-200 hover:text-green-500;
+    @apply tracking-wide font-extrabold transition-colors duration-200 hover:text-green-500 mt-3;
   }
   .section-title {
     @apply text-center text-4xl mb-10 uppercase font-extrabold;
@@ -27,5 +30,8 @@ html {
   }
   .company-name {
     @apply font-expletus ml-2 text-xl font-semibold tracking-wide uppercase;
+  }
+  .read-more {
+    @apply bg-transparent border-transparent capitalize font-bold cursor-pointer;
   }
 }

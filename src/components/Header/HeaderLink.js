@@ -1,8 +1,8 @@
-function HeaderLink({ links }) {
+function HeaderLink({ links, setIsMenuOpen }) {
     return (
         <>
             {links.map((link, index) => (
-                <li key={index} className="nav-link">
+                <li key={index} className="nav-link" onClick={() => setIsMenuOpen(false)}>
                     <a href={link.href}>
                         {link.title}
                     </a>
