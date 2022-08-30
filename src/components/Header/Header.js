@@ -11,7 +11,7 @@ function Header() {
                 </ul>
                 <Link to="/" className='flex items-center'>
                     <img src={logo} alt="" className='w-8 h-8' />
-                    <span className='sm:text-2xl uppercase font-semibold ml-2'>Travel VietNam</span>
+                    <span className='company-name sm:text-2xl uppercase font-semibold ml-2'>Travel VietNam</span>
                 </Link>
                 <ul className='nav-links-container'>
                     <HeaderLink links={rightLinks} />

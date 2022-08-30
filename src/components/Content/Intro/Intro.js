@@ -2,7 +2,7 @@ import React from 'react';
 import introVideo from '../../../assets/video/intro.mp4'
 function Intro() {
     return (
-        <section className='relative w-full min-h-screen p-10 flex justify-center items-center'>
+        <section className='relative w-full min-h-screen p-10 flex justify-center items-center' id="intro">
             <video
                 controls=""
                 muted
