@@ -1,4 +1,4 @@
-import { About, FeaturedTours, Intro, Services } from "../../components/Content";
+import { About, FeaturedTours, Intro, Services, Places } from "../../components/Content";
 function Home() {
     return (
         <>
@@ -6,6 +6,7 @@ function Home() {
             <About />
             <Services />
             <FeaturedTours />
+            <Places />
         </>
     );
 }

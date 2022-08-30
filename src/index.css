@@ -34,4 +34,21 @@ html {
   .read-more {
     @apply bg-transparent border-transparent capitalize font-bold cursor-pointer;
   }
+
+  .places-container {
+    @apply flex flex-wrap w-1/2;
+  }
+  .place-half-link {
+    @apply w-1/2;
+  }
+  .place-link {
+    @apply md:p-2 p-1 relative overflow-hidden rounded-lg after:w-full after:h-full after:top-0 after:left-0 after:absolute after:border-2 after:border-gray-100 after:rounded-2xl  hover:after:scale-75 transition duration-500 ease-in;
+    /* @apply w-full after:absolute after:top-0 after:left-0 after:w-full after:h-full after:border-2 after:border-gray-100 after:rounded-2xl  */
+  }
+  .place-img {
+    @apply w-full h-full object-center block group-hover:opacity-60 group-hover:scale-110 duration-500 ease-in-out rounded-lg;
+  }
+  .place-title {
+    @apply sm:text-4xl lg:text-5xl text-lg opacity-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center font-bold italic text-gray-800 group-hover:opacity-100 transition duration-500 ease-in;
+  }
 }

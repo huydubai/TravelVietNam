@@ -87,6 +87,16 @@ import myson3 from './assets/Tours/myson/myson3.jpg'
 import myson4 from './assets/Tours/myson/myson4.jpg'
 import myson5 from './assets/Tours/myson/myson5.jpg'
 
+
+// Places img
+
+import placesSG from './assets/Places/saigon.jpg'
+import placesHN from './assets/Places/hanoi.jpg'
+import placesPQ from './assets/Places/phuquoc.jpg'
+import placesDN from './assets/Places/danang.jpg'
+import placesSP from './assets/Places/sapa.jpg'
+import placesHA from './assets/Places/hoian.jpg'
+
 export const leftLinks = [
     { href: '/#tour', title: 'Tours' },
     { href: '/#tips', title: 'Tips' },
@@ -1293,4 +1303,71 @@ export const tours = [
         ],
     },
 ]
+
+export const placesToGo = [
+    {
+        id: 1,
+        name: 'Saigon',
+        imageSrc: placesSG,
+        description: [
+            'Still often referred to by its old name, Saigon, Ho Chi Minh City is a clamorous, chaotic sensory feast. Motorbikes honk in a tidal wave across clogged intersections, locals crouch on street corners slurping steaming hot bowls of Pho (noodle soup); and the sultry air is thick with exhaust fumes and exotic spices.',
+            `Ho Chi Minh City is Vietnam's commercial hub and largest city, and it's a place where old abuts new with striking contrast. Temples huddle amid skyscrapers and designer shops; locals cast bamboo fishing rods into the languorous Saigon River; and in places, the city feels almost European, with its elegant French colonial architecture and wide, tree-lined avenues.`,
+            `Adding to the fascinating cultural jolt is a clutch of intriguing tourist attractions, from the poignant War Remnants Museum and captivating water puppet shows to colorful markets and the time warp of the Reunification Palace.`,
+        ],
+    },
+    {
+        id: 2,
+        name: 'Hanoi',
+        imageSrc: placesHN,
+        description: [
+            `Dive into Hanoi's pulsating city streets, and you'll capture the essence of Vietnamese life. The country's capital is a burgeoning economic center that still clings strongly to traditional culture, managing to be a showcase of both old and modern Vietnam.`,
+            `The old quarter district hums with street vendor action; the cafés and restaurants are vibrant, contemporary scenes; and just trying to cross a road here can end up being an adrenaline-fueled escapade.`,
+            `When the crowds begin to wear you down, Hanoi has a bundle of places to visit where you can escape for some peace. Hoan Kiem Lake is a relaxing respite right within the city, while the Temple of Literature and Vietnam Museum of Ethnology provide plenty of opportunities to reflect on Vietnam's grand history.`,
+        ],
+
+    },
+    {
+        id: 3,
+        name: 'Danang',
+        imageSrc: placesDN,
+        description: [
+            `Thanks to its central location, vast stretches of beach, and variety of things to do, the coastal city of Da Nang has become something of a tourism hot spot.`,
+            `The city, which lies halfway between Hanoi in the North and Ho Chi Minh in the South, is the fifth-largest in Vietnam, and the third most populated. It has an international airport and is a short drive away from Hoi An, making it a great spot for international tourists to stay a few days on a tour of the country.`,
+            `Locals and ex-pats living in Vietnam also love this destination for its relaxed lifestyle, burgeoning food scene, and exciting nightlife. Here are just some of the top places to go when you visit Da Nang.`,
+        ],
+
+    },
+    {
+        id: 4,
+        name: 'PhuQuoc',
+        imageSrc: placesPQ,
+        description: [
+            `Phu Quoc: an ‘emerald island’ of white powder beaches, turquoise waters, palm tree forests, mountains, and waterfalls. This Vietnamese island is located close to the coast of Cambodia in the Gulf of Thailand, and half of the island is a stunning national park. Aside from its incredible nature, and paradise beaches, it is also home to bustling markets, and unique food products. `,
+            `Hop on a motorbike and get ready for an adventure, with all the top things to do in Phu Quoc.`,
+        ],
+    },
+
+    {
+        id: 5,
+        name: 'Sapa',
+        imageSrc: placesSP,
+        description: [
+            `Sapa is home to stunning mountain landscapes, verdant rice terraces, unique stilt villages and Indochina peak, the Fansipan. The most prominent attraction in the town of Sapa is Fansipan, which is the highest mountain in Vietnam and it is only 19km from town.`,
+            `It may seem like a short distance, but the trek is not easy; the rough terrain and unpredictable weather present some difficulties. `,
+            ` Tourists who are fit and have mountain climbing experience will enjoy this attraction the most, as the peak is accessible all year round. Technical climbing skills are not necessary, but endurance is a must.`,
+        ],
+    },
+
+    {
+        id: 6,
+        name: 'Hoian',
+        imageSrc: placesHA,
+        description: [
+            'Hoi An has captivated the imaginations of artists and photographers for hundreds of years. In the 18th Century, Hoi An was one of the most important trading ports in the South China Sea. Languages of the world were spoken in its alleyways, artisans swapped materials and inspiration, and Hoianese handcrafts like ceramics were traded as far away as Egypt and Portugal. The ancient town has preserved this dynamic legacy in structures like the Japanese Bridge and Chinese Temples, its architecture a living memory of Japanese and Chinese and European roots.',
+            'Free from pollution and vehicle traffic, pedestrians stroll past golden yellow buildings where laughing women squat together to sell fresh food and handicraft from bamboo baskets under strings of silk lanterns. Horizon-bound rice paddies undulate in ten thousand shades of green or reflect the sky back to itself in a mirror of flooded fields.',
+            'Hoi An was declared a UNESCO World Heritage Site in 1999, and it retains the weight and heartbeat of its centuries of commerce and culture and dreams. There is something about the city that transforms every guest into an artist or photographer. Here are some of its most photogenic and Instagram-worthy sites and scenes.',
+        ],
+
+    },
+];
 
