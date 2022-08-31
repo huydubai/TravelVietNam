@@ -5,7 +5,7 @@ import { tours } from '../../../data'
 const featuredTours = tours.slice(0, 6)
 function FeaturedTours() {
     return (
-        <section className="section bg-gray-50" id="tour">
+        <section className="section bg-gray-50" id="tours">
             <SectionTitle title="Featured Tours" />
             <section className="section-center rounded-3xl">
                 <Tours tours={featuredTours} color="gray" />

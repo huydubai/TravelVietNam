@@ -1,14 +1,14 @@
 
 import SectionTitle from '../SectionTitle'
-import PlacesIntro from './PlacesIntro'
+import Desc from './Desc'
 import { placesToGo } from '../../../data'
 import Place from './Place';
 function Places() {
     return (
-        <section>
+        <section className='section bg-white' id='places'>
             <SectionTitle title="Place To Go" />
             <div className='section-center'>
-                <PlacesIntro
+                <Desc
                     title="Explore the best places in Vietnam"
                     intro="Choose from the best holiday destinations in Vietnam. And best of all, it’s quarantine-free for the fully vaccinated. You are free to enjoy full holiday access upon arrival. Take in new sites, sounds, and flavors. Experiences that are truly memorable. Live fully in Vietnam."
                 />

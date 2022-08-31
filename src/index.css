@@ -8,7 +8,7 @@ html {
 }
 @layer components {
   .grid-container {
-    @apply grid grid-cols-1 gap-y-10 sm:grid-cols-2 md:grid-cols-2  gap-x-6 lg:grid-cols-3;
+    @apply grid grid-cols-1 gap-y-10 sm:grid-cols-2 md:grid-cols-2  gap-x-6;
   }
   .section {
     @apply py-24 px-0;
@@ -43,12 +43,14 @@ html {
   }
   .place-link {
     @apply md:p-2 p-1 relative overflow-hidden rounded-lg after:w-full after:h-full after:top-0 after:left-0 after:absolute after:border-2 after:border-gray-100 after:rounded-2xl  hover:after:scale-75 transition duration-500 ease-in;
-    /* @apply w-full after:absolute after:top-0 after:left-0 after:w-full after:h-full after:border-2 after:border-gray-100 after:rounded-2xl  */
   }
   .place-img {
     @apply w-full h-full object-center block group-hover:opacity-60 group-hover:scale-110 duration-500 ease-in-out rounded-lg;
   }
   .place-title {
     @apply sm:text-4xl lg:text-5xl text-lg opacity-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center font-bold italic text-gray-800 group-hover:opacity-100 transition duration-500 ease-in;
+  }
+  .btn {
+    @apply px-6 py-3 cursor-pointer text-sm focus:outline-none focus:ring shadow rounded-3xl transition duration-200 ease-in-out;
   }
 }

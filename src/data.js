@@ -4,6 +4,9 @@ import rentalsIcon from './assets/icons/icon3.svg'
 import toursIcon from './assets/icons/icon4.svg'
 import guideIcon from './assets/icons/icon5.svg'
 import visaIcon from './assets/icons/icon6.svg'
+import weatherIcon from './assets/icons/icon7.svg'
+import safetyIcon from './assets/icons/icon8.svg'
+import historyIcon from './assets/icons/icon9.svg'
 
 //  Images tours
 import halong1 from './assets/Tours/halong/halong1.jpg'
@@ -97,8 +100,18 @@ import placesDN from './assets/Places/danang.jpg'
 import placesSP from './assets/Places/sapa.jpg'
 import placesHA from './assets/Places/hoian.jpg'
 
+
+import glassBridge from './assets/Blogs/img1.jpg'
+import travelLeisure from './assets/Blogs/img2.jpg'
+import reuters from './assets/Blogs/img3.jpg'
+
+import globeIcon from './assets/icons/i1.svg'
+import moneyIcon from './assets/icons/i2.svg'
+import starIcon from './assets/icons/i3.svg'
+import heartIcon from './assets/icons/i4.svg'
+
 export const leftLinks = [
-    { href: '/#tour', title: 'Tours' },
+    { href: '/#tours', title: 'Tours' },
     { href: '/#tips', title: 'Tips' },
     { href: '/#services', title: 'Services' },
 ]
@@ -1371,3 +1384,132 @@ export const placesToGo = [
     },
 ];
 
+export const reviews = [
+    {
+        id: 1,
+        imageSrc: halong1,
+        name: 'Albus Dumbledore',
+        comment:
+            'This tour company was amazing! Nam was absolutely fantastic to work with, he arranged everything was open to any changes we wanted to make itinerary before coming. Once in Vietnam he was prompt as responding to any inquires we had. They put the client/traveller first and work with you to create the most memorable trip. :)',
+        stars: 5,
+        from: 'Tripadvisor',
+    },
+    {
+        id: 2,
+        imageSrc: halong2,
+        name: 'JK.Rowling',
+        comment:
+            'This tour company was amazing! Nam was absolutely fantastic to work with, he arranged everything was open to any changes we wanted to make itinerary before coming. Once in Vietnam he was prompt as responding to any inquires we had. They put the client/traveller first and work with you to create the most memorable trip. :)',
+        stars: 3.5,
+        from: 'Booking.com',
+    },
+    {
+        id: 3,
+        imageSrc: halong3,
+        name: 'Severus Snape',
+        comment:
+            'This tour company was amazing! Nam was absolutely fantastic to work with, he arranged everything was open to any changes we wanted to make itinerary before coming. Once in Vietnam he was prompt as responding to any inquires we had. They put the client/traveller first and work with you to create the most memorable trip. :)',
+        stars: 5,
+        from: 'Tripadvisor',
+    },
+];
+
+export const blogs = [
+    {
+        id: 1,
+        imageSrc: glassBridge,
+        title: `World's longest glass bridge to open in northern Vietnam`,
+        description: `A 632-meter-long glass bridge in northern highlands town Moc Chau, said to be the world's longest, is scheduled to open to tourists during the Reunification Day (April 30) holiday.`,
+        url: 'https://e.vnexpress.net/news/places/worlds-longest-glass-bridge-to-open-in-northern-vietnam-4452792.html',
+        source: 'VnExpress',
+        date: new Date(),
+        timeToRead: 7,
+    },
+    {
+        id: 2,
+        imageSrc: placesPQ,
+        title: 'Vietnam welcomes 1st tourists to resort island after 2 years',
+        description:
+            'Vietnam has welcomed more than 200 foreign tourists to its largest island, the first to visit the Southeast Asian country after nearly two years of border closure due to the COVID-19 pandemic',
+        url: `https://abcnews.go.com/Travel/wireStory/vietnam-welcomes-1st-tourists-resort-island-years-81296435`,
+        source: 'ABC News',
+        date: new Date(),
+        timeToRead: 10,
+    },
+
+    {
+        id: 3,
+        imageSrc: travelLeisure,
+        title: 'Vietnam Lifts Quarantine, Opens Borders to the World',
+        description:
+            'All travelers will be required to arrive with proof of a negative COVID-19 PCR or LAMP test taken within 72 hours of their departure or a negative rapid antigen test taken within 24 hours of their departure.',
+        url: 'https://www.travelandleisure.com/travel-news/vietnam-lifts-quarantine-requirement',
+        source: 'Travel Leisure',
+        date: new Date(),
+        timeToRead: 8,
+    },
+
+    {
+        id: 4,
+        imageSrc: placesSG,
+        title: 'Vietnam Ready to Welcome Back International Tourists',
+        description: `Vietnam has launched a new tourism campaign “Live fully in Vietnam” as it welcomes international tourists back into the country or the first time since March 2020. According to a release, “travelers will be able to walk new paths and savor new tastes in Vietnam, to experience the country’s internationally-treasured culture and nature anew.”`,
+        url: 'https://www.brandinginasia.com/vietnam-ready-to-welcome-back-international-tourists-launches-live-fully-in-vietnam-campaign/',
+
+        source: 'Brading in Asia',
+        date: new Date(),
+        timeToRead: 9,
+    },
+    {
+        id: 5,
+        imageSrc: reuters,
+        title: `Vietnam's resort island welcomes first tourists after nearly 2 years`,
+        description: `HANOI, Nov 20 (Reuters) - Two hundred vaccinated foreign tourists arrived in Vietnam's beach-fringed island of Phu Quoc on Saturday, the first wave of visitors to the country in nearly two years as it seeks to resurrect its pandemic-ravaged tourism economy.`,
+        url: 'https://www.reuters.com/markets/asia/vietnams-resort-island-welcomes-first-tourists-after-nearly-2-yrs-2021-11-20/',
+        source: 'Reuters',
+        date: new Date(),
+        timeToRead: 7,
+    },
+
+    {
+        id: 6,
+        imageSrc: placesHN,
+        title: `Asia's Leading Destination 2021`,
+        description: `Vietnam is announced as “Asia’s Leading Destination 2021” by The World Travel Awards.We are ready to welcome back visitors from all over the world!”`,
+        url: 'https://www.worldtravelawards.com/award-asias-leading-destination-2021',
+        source: 'WTA',
+        date: new Date(),
+        timeToRead: 9,
+    },
+];
+
+export const tips = [
+    { id: 1, title: 'visa', icon: visaIcon },
+    { id: 2, title: 'transport', icon: rentalsIcon },
+    { id: 3, title: 'weather', icon: weatherIcon },
+    { id: 4, title: 'safety', icon: safetyIcon },
+    { id: 5, title: 'history', icon: historyIcon },
+];
+
+export const features = [
+    {
+        name: 'Diverse Destinations',
+        description: 'Flexible Tailor-made Itineraries designed just for you.',
+        icon: globeIcon,
+    },
+    {
+        name: 'Value for Money',
+        description: 'Experienced local guides with a passion and great knowledge.',
+        icon: moneyIcon,
+    },
+    {
+        name: 'Beautiful Places',
+        description: 'On ground support with modern transportation you need.',
+        icon: starIcon,
+    },
+    {
+        name: 'Passionate Travel',
+        description: 'Destination experts behind every journey of Reverie Travel.',
+        icon: heartIcon,
+    },
+];

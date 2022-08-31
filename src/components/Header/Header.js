@@ -76,8 +76,8 @@ function Header() {
                             </div>
                             <nav className="text-left">
                                 <ul className='py-4'>
-                                    <HeaderLink links={leftLinks} setIsMenuOpen={setIsMenuOpen} />
-                                    <HeaderLink links={rightLinks} setIsMenuOpen={setIsMenuOpen} />
+                                    <HeaderLink links={leftLinks} menuOpen={setIsMenuOpen} />
+                                    <HeaderLink links={rightLinks} menuOpen={setIsMenuOpen} />
                                 </ul>
                             </nav>
                         </div>

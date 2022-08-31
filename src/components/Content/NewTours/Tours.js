@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-function Tours({ color, tours, extraCol }) {
+function Tours({ color, tours }) {
     return (
-        <div className={`grid-container ${extraCol ? 'xl:grid-cols-4 xl:gap-x-6' : 'lg:grid-cols-3'}`}>
+        <div className="grid-container">
             {tours.map(tour => (
                 <div key={tour.id} className={`group bg-${color}-200 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition duration-300 ease-in-out overflow-hidden  `}>
                     <Link to={`/tours/${tour.name}`}>

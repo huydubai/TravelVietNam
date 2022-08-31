@@ -1,4 +1,5 @@
-import { About, FeaturedTours, Intro, Services, Places } from "../../components/Content";
+import { About, FeaturedTours, Intro, Services, Places, NewTours, Reviews, Promotion, Blogs, TravelTips, WhyUs } from "../../components/Content";
+
 function Home() {
     return (
         <>
@@ -7,6 +8,12 @@ function Home() {
             <Services />
             <FeaturedTours />
             <Places />
+            <NewTours />
+            <Reviews />
+            <Promotion />
+            <Blogs />
+            <TravelTips />
+            <WhyUs />
         </>
     );
 }
