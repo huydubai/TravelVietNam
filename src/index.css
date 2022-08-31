@@ -53,4 +53,7 @@ html {
   .btn {
     @apply px-6 py-3 cursor-pointer text-sm focus:outline-none focus:ring shadow rounded-3xl transition duration-200 ease-in-out;
   }
+  .footer-link {
+    @apply p-2 border rounded-full border-white/25 hover:opacity-75 text-white bg-green-500;
+  }
 }

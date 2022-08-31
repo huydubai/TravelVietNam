@@ -9,7 +9,7 @@ function WhyUs() {
             <div className='section-center'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3'>
                     {features.map(feature => (
-                        <div className='mt-10'>
+                        <div className='mt-10' key={feature.name}>
                             <div className='flex justify-between'>
                                 <div className='bg-amber-200 rounded-lg mr-6 w-16 h-16 sm:w-16 sm:h-16'>
                                     <div className="w-full h-full sm:w-full sm:h-full">

@@ -1,4 +1,17 @@
-import { About, FeaturedTours, Intro, Services, Places, NewTours, Reviews, Promotion, Blogs, TravelTips, WhyUs } from "../../components/Content";
+import {
+    About,
+    FeaturedTours,
+    Intro,
+    Services,
+    Places,
+    NewTours,
+    Reviews,
+    Promotion,
+    Blogs,
+    TravelTips,
+    WhyUs,
+    Contact,
+} from "../../components/Content";
 
 function Home() {
     return (
@@ -14,6 +27,7 @@ function Home() {
             <Blogs />
             <TravelTips />
             <WhyUs />
+            <Contact />
         </>
     );
 }
