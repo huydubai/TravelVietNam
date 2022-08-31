@@ -56,4 +56,10 @@ html {
   .footer-link {
     @apply p-2 border rounded-full border-white/25 hover:opacity-75 text-white bg-green-500;
   }
+  .img-main {
+    @apply rounded-xl overflow-hidden;
+  }
+  .verticalRight {
+    @apply border-l-4 border-gray-500 pl-4 my-6 italic rounded font-semibold;
+  }
 }

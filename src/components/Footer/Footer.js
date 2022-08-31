@@ -8,8 +8,8 @@ function Footer() {
             </div>
             <div className='lg:w-3/5 bg-green-200'>
                 <div className='flex flex-wrap w-full p-5 lg:p-5 pb-0 lg:pb-0 lg:gap-x-10 lg:flex-nowrap '>
-                    <form className='w-full lg:w-1/2 '>
-                        <label for="input" className='text-md lg:text-lg'>Receive new travel stories from Vietnam once a month in your inbox.</label>
+                    <form action='' className='w-full lg:w-1/2 '>
+                        <label htmlFor="input" className='text-md lg:text-lg'>Receive new travel stories from Vietnam once a month in your inbox.</label>
                         <input type="email" id="input" placeholder='Your email'
                             className='w-full my-3 lg:w-full h-10 border-2 border-green-300 focus:border-green-500 outline-none rounded-md p-2' />
                         <button type='submit' className='block bg-green-400 px-10 py-2 w-full lg:w-full rounded-md hover:bg-green-600 text-white'>Send</button>

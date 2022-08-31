@@ -25,14 +25,14 @@ function Header() {
         >
             <div className='flex items-center justify-between section-center'>
                 <ul className='nav-links-container'>
-                    <HeaderLink links={leftLinks} />
+                    <HeaderLink links={leftLinks} setIsMenuOpen={setIsMenuOpen} />
                 </ul>
                 <Link to="/" className='flex items-center'>
                     <img src={logo} alt="" className='w-8 h-8' />
                     <span className='company-name sm:text-2xl uppercase font-semibold ml-2'>Travel VietNam</span>
                 </Link>
                 <ul className='nav-links-container'>
-                    <HeaderLink links={rightLinks} />
+                    <HeaderLink links={rightLinks} setIsMenuOpen={setIsMenuOpen} />
                 </ul>
                 <div className='lg:hidden'>
                     <button
@@ -76,8 +76,8 @@ function Header() {
                             </div>
                             <nav className="text-left">
                                 <ul className='py-4'>
-                                    <HeaderLink links={leftLinks} menuOpen={setIsMenuOpen} />
-                                    <HeaderLink links={rightLinks} menuOpen={setIsMenuOpen} />
+                                    <HeaderLink links={leftLinks} setIsMenuOpen={setIsMenuOpen} />
+                                    <HeaderLink links={rightLinks} setIsMenuOpen={setIsMenuOpen} />
                                 </ul>
                             </nav>
                         </div>
