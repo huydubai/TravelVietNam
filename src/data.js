@@ -101,6 +101,46 @@ import placesSP from './assets/Places/sapa.jpg'
 import placesHA from './assets/Places/hoian.jpg'
 
 
+import warMuseum from './assets/Tours/detailPlaces/warMuseum.jpg'
+import puppetShow from './assets/Tours/detailPlaces/puppetShow.jpg'
+
+import oldQuaters from './assets/Tours/detailPlaces/oldQuaters.jpg'
+import hoankiem from './assets/Tours/detailPlaces/hoankiem.jpg'
+import literatureTemple from './assets/Tours/detailPlaces/literatureTemple.jpg'
+import hcmmauseleum from './assets/Tours/detailPlaces/hcmmauseleum.jpg'
+import ethnologyMuseum from './assets/Tours/detailPlaces/ethnologyMuseum.jpg'
+
+import beaches from './assets/Places/detailPlaces/beaches.jpg'
+import sontra1 from './assets/Places/detailPlaces/sontra1.jpg'
+import sontra2 from './assets/Places/detailPlaces/sontra2.jpg'
+import haivan from './assets/Places/detailPlaces/haivan.jpg'
+import dragonBridge from './assets/Places/detailPlaces/dragonBridge.jpg'
+
+import saoBeach from './assets/Places/detailPlaces/saoBeach.jpg'
+import baidaiBeach from './assets/Places/detailPlaces/baidaiBeach.jpg'
+import anthoi from './assets/Places/detailPlaces/anthoi.jpg'
+import fishauseFactory from './assets/Places/detailPlaces/fishauseFactory.jpg'
+import dinhcau from './assets/Places/detailPlaces/dinhcau.jpg'
+
+import muonghoa from './assets/Places/detailPlaces/muonghoa.jpg'
+import fansipan1 from './assets/Places/detailPlaces/fansipan1.jpg'
+import fansipan2 from './assets/Places/detailPlaces/fansipan2.jpg'
+import hamrong from './assets/Places/detailPlaces/hamrong.jpg'
+import bachaMarket from './assets/Places/detailPlaces/bachaMarket.jpg'
+import fansipan3 from './assets/Places/detailPlaces/fansipan3.jpg'
+import fansipan4 from './assets/Places/detailPlaces/fansipan4.jpg'
+
+import japaneseBridge from './assets/Places/detailPlaces/japaneseBridge.jpg'
+import yellowWall from './assets/Places/detailPlaces/yellowWall.jpg'
+import yellowWall1 from './assets/Places/detailPlaces/yellowWall1.jpg'
+import yellowWall2 from './assets/Places/detailPlaces/yellowWall2.jpg'
+import lanterns from './assets/Places/detailPlaces/lanterns.jpg'
+import faifo from './assets/Places/detailPlaces/faifo.jpg'
+
+
+
+// Blog
+
 import glassBridge from './assets/Blogs/img1.jpg'
 import travelLeisure from './assets/Blogs/img2.jpg'
 import reuters from './assets/Blogs/img3.jpg'
@@ -810,6 +850,26 @@ export const tours = [
             `This tour/activity will have a maximum of 50 travelers`,
             `Operated by Reverie Travel`,
         ],
+        averageRating: 4,
+        numReviews: 1,
+        reviews: [
+            {
+                _id: '620cfc4608c82135e823a357',
+                rating: 4,
+                title: 'So beautiful',
+                comment: 'We had a great time visting Vietnam! We will come back soon!',
+                product: '620486f7facd223de7588b53',
+                createdAt: '2022-02-16T13:29:42.150Z',
+                updatedAt: '2022-02-16T13:29:42.150Z',
+
+                user: {
+                    email: 'huilguiel@gmail.com',
+                    name: 'Huy Nguyen',
+                    role: 'customer',
+                    _id: '620486f7facd223de7588b4d',
+                },
+            },
+        ],
     },
 
     {
@@ -1327,6 +1387,68 @@ export const placesToGo = [
             `Ho Chi Minh City is Vietnam's commercial hub and largest city, and it's a place where old abuts new with striking contrast. Temples huddle amid skyscrapers and designer shops; locals cast bamboo fishing rods into the languorous Saigon River; and in places, the city feels almost European, with its elegant French colonial architecture and wide, tree-lined avenues.`,
             `Adding to the fascinating cultural jolt is a clutch of intriguing tourist attractions, from the poignant War Remnants Museum and captivating water puppet shows to colorful markets and the time warp of the Reunification Palace.`,
         ],
+        places: [
+            {
+                id: 1,
+                name: 'Cu Chi Tunnels',
+                description: [
+                    `About 60 kilometers from Ho Chi Minh City, the Cu Chi Tunnels are a must-see half-day trip and one of the top tours for visitors to the city. This vast 250-kilometer-plus network of tunnels served as the base for the Viet Cong's military operations during the Vietnam War. `,
+                    `A visit usually includes the chance to crawl through part of the tunnel network, an experience that enhances your appreciation for the stamina and adaptability of the soldiers who lived here.`,
+                    `Even if you're not a fan of modern military history, the tunnels offer powerful insight into the conditions faced by troops during the conflict and the strategies that strengthened the VC's resistance against American forces.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: cuchi1,
+                        imageAlt: 'Cu Chi Tunnels',
+                    },
+                ],
+            },
+            {
+                id: 2,
+                name: 'War Remnants Museum',
+                description: [
+                    'The War Remnants Museum is one of the most popular museums in Vietnam, with harrowing exhibits related to the horrors of war in this battle-worn nation. The museum primarily focuses on the Vietnam War, however, some exhibits relate to the first Indochina War with French colonialists.',
+                    'Most of the displays are photographic images, and some of these are confronting – especially the graphic shots of child Agent Orange victims. Artifacts on display include a guillotine and the "tiger cages" used for Viet Cong prisoners.',
+                    `Period military vehicles and weapons are displayed in the museum's courtyard. After touring the countryside and the Cu Chi Tunnels, you'll find these exhibits even more moving, but note that some of the exhibits are not suitable for small children.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: warMuseum,
+                        imageAlt: 'War Remnants Museum',
+                    },
+                ],
+            },
+            {
+                id: 3,
+                name: 'Mekong Delta',
+                description: [
+                    'Cruising through the lush labyrinth of palm-fringed channels, rivers, and islands of the Mekong Delta is a popular day trip that seems a world away from hectic Ho Chi Minh City. It offers a fascinating glimpse into the way of life of the people who depend on this fragile waterway for their survival.',
+                    `Encompassing about 40,000 square kilometers, the delta produces more than half of the country's grain and 90 percent of its exports, and it's well-known for its floating markets, which usually take place during the early morning.`,
+                    `From Ho Chi Minh City, tours to the delta, usually involve a 70-kilometer drive to My Tho, a market town on the banks of the Mekong River; a cruise along the delta; and visits to local villages, farms, and factories. The Mekong Delta Discovery Small Group Adventure Tour offers these activities, as well as the chance to sample traditional dishes and tropical fruit from the region.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: mekong1,
+                        imageAlt: 'Mekong Delta',
+                    },
+                ],
+            },
+            {
+                id: 4,
+                name: 'Golden Dragon Water Puppet Theatre',
+                description: [
+                    'The Golden Dragon Water Puppet Theatre is perfect for families with young children and anyone who enjoys light-hearted traditional entertainment. Water puppetry originated in rural villages in the Red River Delta and has been performed in Vietnam for more than 1,000 years.',
+                    `The captivating 50-minute show provides a window into the country's culture. It's presented in Vietnamese, but the strength of the puppet characters, both people and animals, transcends the language barrier.`,
+                    `Live music enhances the experience; the talented musicians play traditional instruments such as bamboo flutes and two-stringed violins. The theater is air-conditioned, and if you're sitting in the front row, be prepared for some gentle splashes.`,
+                ],
+                images: [
+                    { id: 1, imageSrc: puppetShow, imageAlt: 'water puppet show' },
+                ],
+            },
+        ],
     },
     {
         id: 2,
@@ -1337,7 +1459,84 @@ export const placesToGo = [
             `The old quarter district hums with street vendor action; the cafés and restaurants are vibrant, contemporary scenes; and just trying to cross a road here can end up being an adrenaline-fueled escapade.`,
             `When the crowds begin to wear you down, Hanoi has a bundle of places to visit where you can escape for some peace. Hoan Kiem Lake is a relaxing respite right within the city, while the Temple of Literature and Vietnam Museum of Ethnology provide plenty of opportunities to reflect on Vietnam's grand history.`,
         ],
-
+        places: [
+            {
+                id: 1,
+                name: 'Hanoi Old Town Quarter',
+                description: [
+                    'The Japanese Covered Bridge was built in the 16th century to connect the Chinese and Japanese quarters of the Vietnamese city. It is now such an iconic landmark of Hoi An City and Vietnam itself that it features on the 20,000 VND note. A temple on the north side is dedicated to the Taoist God of weather, lending the bridge its Vietnamese name: Chùa Cầu, the temple bridge.',
+                    'Visit early in the morning to beat the crowds and cross the bridge without paying a fee. Photos of the inside are historically interesting, with its Chinese script and its monkey and dog statue guardians. Photos of the bridge’s outside captured the delicate beauty of its architecture.',
+                    'During the daytime you can get good pictures of its fine details: carved dark wood trimmed with red lacquer and gold and stretched between two shorelines of sunshine-yellow walls. At night, the bridge glows with diffuse colored lighting, casting a crisp reflection into the water below.',
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: oldQuaters,
+                        imageAlt: 'Hanoi Old Town Quarter',
+                    },
+                ],
+            },
+            {
+                id: 2,
+                name: 'Hoan Kiem Lake',
+                description: [
+                    `Hanoi's most well-known landmark is tranquil Hoan Kiem Lake, nestled just on the southern edge of the old town quarter. `,
+                    `The major tourist attraction upon the lake is the small island (reached by a red bridge) that holds Ngoc Son Temple, dedicated to three grand figures from Vietnamese history: La To (revered as a patron saint of physicians); the renowned scholar Van Xuong; and the 13th-century general Tran Hung Dao, who fought against the invading Mongol army.`,
+                    `Another tiny island on the southern section of the lake holds the stocky Turtle Tower – best viewed from the bridge.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: hoankiem,
+                        imageAlt: 'Hoan Kiem Lake',
+                    },
+                ],
+            },
+            {
+                id: 3,
+                name: 'Temple of Literature',
+                description: [
+                    `The city's most interesting religious building is this beautiful and incredibly peaceful Confucian temple, originally built as a university in the 11th century. Today, the Temple of Literature stands as a tribute to the nation's scholars.`,
+                    `It was here, in the medieval era, that the philosophy of Confucianism and literature was taught, and near the entranceway, you can still see the names of students who studied here, etched into a series of pillars.`,
+                    `Inside, a series of manicured gardens lead to pavilions and a well-preserved pagoda where a statue of Confucius sits.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: literatureTemple,
+                        imageAlt: 'temple of literature',
+                    },
+                ],
+            },
+            {
+                id: 4,
+                name: ' Ho Chi Minh Mausoleum',
+                description: [
+                    'Perhaps more than anything else, strings of silk lanterns are the most iconic symbols of Hoi An. Imported by the Japanese, who inherited them from the Chinese, these traditional lanterns are now a solidly Vietnamese tradition that has been handcrafted in Hoi An for hundreds of years.',
+                    'During the daytime, they dangle in bright colors from doorways or stretch across in the glass windows of shopfronts, the antique city’s signature accessory.',
+                    'Take a picture during the day to capture different shapes, colors, and patterns pressed against yellow walls, but the lanterns really come alive at night. Head to Old Town just before sunset to see everything softly illuminated, pedestrians padding by underway, everyone’s eyes to the sky. When true darkness falls the lanterns glow in high contrast. Early dusk is the magic hour for catching photos of faces illuminated by the lanterns without losing the background to silhouette and shadow.',
+                ],
+                images: [
+                    { id: 1, imageSrc: hcmmauseleum, imageAlt: ' Ho Chi Minh Mausoleum' },
+                ],
+            },
+            {
+                id: 5,
+                name: 'Vietnam Museum of Ethnology',
+                description: [
+                    `A must for museum fans and history lovers, Hanoi's Vietnam Museum of Ethnology houses the extensive national collection and tells the story of Vietnam's diverse cultures in a series of excellently well-curated exhibits.`,
+                    `Here, the huge number of ethnic minorities who call Vietnam home are highlighted with beautiful displays of artifacts and art that showcase wooden carving, metalwork, and traditional costumes.`,
+                    `The garden area outside the main building holds some of the most interesting exhibits. Here, you can see the rural dwellings used by different ethnic minorities across Vietnam, as well as the fascinating Giarai tomb.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: ethnologyMuseum,
+                        imageAlt: 'Vietnam Museum of Ethnology',
+                    },
+                ],
+            },
+        ],
     },
     {
         id: 3,
@@ -1348,7 +1547,86 @@ export const placesToGo = [
             `The city, which lies halfway between Hanoi in the North and Ho Chi Minh in the South, is the fifth-largest in Vietnam, and the third most populated. It has an international airport and is a short drive away from Hoi An, making it a great spot for international tourists to stay a few days on a tour of the country.`,
             `Locals and ex-pats living in Vietnam also love this destination for its relaxed lifestyle, burgeoning food scene, and exciting nightlife. Here are just some of the top places to go when you visit Da Nang.`,
         ],
-
+        places: [
+            {
+                id: 1,
+                name: 'THE BEAUTIFUL BEACHES',
+                description: [
+                    'The THE BEAUTIFUL BEACHES was built in the 16th century to connect the Chinese and Japanese quarters of the Vietnamese city. It is now such an iconic landmark of Hoi An City and Vietnam itself that it features on the 20,000 VND note. A temple on the north side is dedicated to the Taoist God of weather, lending the bridge its Vietnamese name: Chùa Cầu, the temple bridge.',
+                    'Visit early in the morning to beat the crowds and cross the bridge without paying a fee. Photos of the inside are historically interesting, with its Chinese script and its monkey and dog statue guardians. Photos of the bridge’s outside captured the delicate beauty of its architecture.',
+                    'During the daytime you can get good pictures of its fine details: carved dark wood trimmed with red lacquer and gold and stretched between two shorelines of sunshine-yellow walls. At night, the bridge glows with diffuse colored lighting, casting a crisp reflection into the water below.',
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: beaches,
+                        imageAlt: 'beach in danang',
+                    },
+                ],
+            },
+            {
+                id: 2,
+                name: 'SƠN TRÀ PENINSULA',
+                description: [
+                    `When at any of these beaches, look left. You’ll see the beautiful white Lady Buddha statue on the hill. At 67m, the Goddess of Mercy is the tallest Buddha statue in the land. To see it up close, head out to the Linh Ung Pagoda at Sơn Trà Peninsula, a nature reserve about 10km north-east of the city.`,
+                    `The Sơn Trà (Monkey) Mountain protects the city from approaching sea storms. A hike or ride to the top will reward you with stunning views. `,
+                    `And you may even spot the endangered Pygathrix nemaeus (red-shanked douc) on the way up. The verdant rainforest surrounding the mountain covers 4,000 hectares, making it a cool, lush alternative to the beach on hot days.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: sontra1,
+                        imageAlt: 'SƠN TRÀ PENINSULA',
+                    },
+                    {
+                        id: 2,
+                        imageSrc: sontra2,
+                        imageAlt: 'SƠN TRÀ PENINSULA',
+                    },
+                ],
+            },
+            {
+                id: 3,
+                name: 'HẢI VÂN PASS',
+                description: [
+                    `Motorbike enthusiasts will be keen to adventure along this mountain pass, which Top Gear presenters raved about in their 2008 Vietnam Special TV show. Jeremy Clarkson said the pass is “a deserted ribbon of perfection—one of the best coast roads in the world”.`,
+                    `The scenic 21km-long ‘Ocean Cloud’ pass is famous for many reasons. It’s one of the longest and highest in the country. It was a strategic boundary during war times. And it separates the climates of the tropical south from the subtropical north. `,
+                    `Another reason it’s popular is that it’s easily accessible from Da Nang, Huế, and Hội An. For an epic road trip, ride the pass for 165km between these three cities. Get up early to make a day of it. Or break it up over a couple of days by overnighting en route.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: haivan,
+                        imageAlt: 'haivan pass',
+                    },
+                ],
+            },
+            {
+                id: 4,
+                name: 'THE DRAGON BRIDGE',
+                description: [
+                    `Many cities in Vietnam boast beautiful suspension bridges. But Da Nang lays claim to having the longest of these: Dragon Bridge. This six-lane, state-of-the-art bridge features an impressive dragon structure, which locals are rather proud of. Dragons are important symbols in Vietnamese culture, representing growth and the power of the nation.`,
+                    `At night, the dragon on this bridge is beautifully lit up with LED lights. And, come Saturday and Sunday night at 9 pm, it sprouts fire and water from its mouth in a performance attended by many onlookers. `,
+                    `Best spots for viewing the show? Get close to the action on the bridge itself. Sit at a café on Trần Hưng Đạo Street. Or grab a seat and a snack at the Sơn Trà night market down below.`,
+                ],
+                images: [
+                    { id: 1, imageSrc: dragonBridge, imageAlt: 'THE DRAGON BRIDGE' },
+                ],
+            },
+            {
+                id: 5,
+                name: 'BÀ NÀ HILLS',
+                description: [
+                    `For a family-friendly day outing, head to Bà Nà Hills. This hilltop resort in the Trường Sơn Mountains is a 40-minute drive to the west. It was first established as a resort by the French back in 1919. While most of the villas were destroyed during the war, the Debay Wine Cellar still remains. `,
+                    `Purchase tickets to enter the hills in advance, to skip the queues. Your entry includes a round-tip on the impressive cable cars going up and down the mountain. Once there, there are lots to see and do at the themed, castle-like Sun World Amusement Park.`,
+                    `Walk the flower gardens or French village; visit the Linh Ung temple; or play games at the amusement park. Of course, many people go to take pictures of the famed Golden Bridge. This 150-meter-long architectural marvel features two gigantic concrete hands elegantly holding a shiny gold walkway. Impressive (and Insta-worthy) indeed.`,
+                ],
+                images: [
+                    { id: 1, imageSrc: bana1, imageAlt: 'BÀ NÀ HILLS' },
+                    { id: 2, imageSrc: bana2, imageAlt: 'BÀ NÀ HILLS' },
+                ],
+            },
+        ],
     },
     {
         id: 4,
@@ -1357,6 +1635,78 @@ export const placesToGo = [
         description: [
             `Phu Quoc: an ‘emerald island’ of white powder beaches, turquoise waters, palm tree forests, mountains, and waterfalls. This Vietnamese island is located close to the coast of Cambodia in the Gulf of Thailand, and half of the island is a stunning national park. Aside from its incredible nature, and paradise beaches, it is also home to bustling markets, and unique food products. `,
             `Hop on a motorbike and get ready for an adventure, with all the top things to do in Phu Quoc.`,
+        ],
+        places: [
+            {
+                id: 1,
+                name: 'Sao Beach',
+                description: [
+                    `Coming to Phu Quoc, you should not miss Bai Sao, one of the most beautiful beaches here. Bai Sao is only 25km from Duong Dong town, so you can use some popular transportations in Phu Quoc such as motorbikes, cars, or taxis to get there. The beach is named "Sao - Starfish" because when night falls, there are tens of thousands of starfish moving onto the white sand.`,
+                    `This beach is loved by white sand beaches, clear blue seawater, and a fantastic fresh climate. The rustic but romantic beauty is also a feature that attracts tourists. Please do not forget to visit this beach when traveling to Phu Quoc.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: saoBeach,
+                        imageAlt: 'beach in phuquoc',
+                    },
+                ],
+            },
+            {
+                id: 2,
+                name: 'Bai Dai Beach',
+                description: [
+                    `Bai Dai is also one of the most popular tourist destinations in Phu Quoc. Bai Dai is located in the northwest of the island. To get to Bai Dai beach from Duong Dong town, you should travel along DT45 road to Vinmec Hospital will see a path leading down to the Vinpearl resort complex. Just walking along that road, you will reach the beautiful Bai Dai beach.`,
+                    `Bai Dai is true to its name, stretching more than 20km with clear blue seawater, golden sand, and coconut trees casting shadows at sunset, creating an incredibly poetic scene. With a long stretch of fine golden sand and clear blue sea-like jade, this is considered an ideal beach for all tourists. You can join engaging activities such as kayaking, scuba diving to see corals.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: baidaiBeach,
+                        imageAlt: 'Bai Dai Beach',
+                    },
+                ],
+            },
+            {
+                id: 3,
+                name: 'An Thoi Islands',
+                description: [
+                    `An Thoi archipelago is a destination that you should not miss when traveling to Phu Quoc. Coming here, you can take a boat to see the clear blue sea and the beautiful islands. Blue sea - white sand - golden sunshine are the three words that most accurately describe this beautiful island.`,
+                    `The interesting thing is that you should experience join the fishing tour on a boat. The fish caught will be in the lunch on the ship. In addition, you can swim and snorkel here because Phu Quoc is famous for being the longest and most beautiful coral reef in Vietnam.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: anthoi,
+                        imageAlt: 'An Thoi Islands',
+                    },
+                ],
+            },
+
+            {
+                id: 4,
+                name: 'Fish sauce barrel house',
+                description: [
+                    `The barrel house is the popular name where the handicraft production of concentrated fish sauce is carried out in large wooden crates. People here will prepare more to produce golden drops of fish sauce with the strong smell of anchovies. Phu Quoc fish sauce is famous for its high protein content, beautiful color, and uniquely delicious taste.`,
+                    `You can visit the barrel houses to learn about the production process of the famous fish sauce here. The price of Phu Quoc fish sauce ranges from 100,000đ - 200,000đ/liter depending on the different protein levels. `,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: fishauseFactory,
+                        imageAlt: 'Fish sauce barrel house',
+                    },
+                ],
+            },
+            {
+                id: 5,
+                name: 'Dinh Cau Temple',
+                description: [
+                    `Dinh Cau is a must-visit place in Duong Dong town, located on a bizarre cliff reaching out to the sea. This temple worships Thuy Long Thanh Mau, who is said to have openly reclaimed Phu Quoc island. To get Dinh Cau you need to climb 29 meandering stone steps.`,
+                    `This ancient temple is lying under the big green tree. It is the more nostalgic and mysterious beauty under the sunset, so you should come here late afternoon and enjoy the sunset. Every 15 Oct lunar month, the Dinh Cau festival will be organized and attract thousands of tourists. You can plan to visit this occasion to understand more about festival culture in Vietnam. `,
+                ],
+                images: [{ id: 1, imageSrc: dinhcau, imageAlt: 'Dinh Cau Temple' }],
+            },
         ],
     },
 
@@ -1369,6 +1719,86 @@ export const placesToGo = [
             `It may seem like a short distance, but the trek is not easy; the rough terrain and unpredictable weather present some difficulties. `,
             ` Tourists who are fit and have mountain climbing experience will enjoy this attraction the most, as the peak is accessible all year round. Technical climbing skills are not necessary, but endurance is a must.`,
         ],
+        places: [
+            {
+                id: 1,
+                name: 'Muong Hoa Valley',
+                description: [
+                    'The  was built in the 16th century to connect the Chinese and Japanese quarters of the Vietnamese city. It is now such an iconic landmark of Hoi An City and Vietnam itself that it features on the 20,000 VND note. A temple on the north side is dedicated to the Taoist God of weather, lending the bridge its Vietnamese name: Chùa Cầu, the temple bridge.',
+                    'Visit early in the morning to beat the crowds and cross the bridge without paying a fee. Photos of the inside are historically interesting, with its Chinese script and its monkey and dog statue guardians. Photos of the bridge’s outside captured the delicate beauty of its architecture.',
+                    'During the daytime you can get good pictures of its fine details: carved dark wood trimmed with red lacquer and gold and stretched between two shorelines of sunshine-yellow walls. At night, the bridge glows with diffuse colored lighting, casting a crisp reflection into the water below.',
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: muonghoa,
+                        imageAlt: 'muong hoa valley',
+                    },
+                ],
+            },
+            {
+                id: 2,
+                name: 'Fansipan Cable Car',
+                description: [
+                    `As of May 11, 2013, cable car to the top of Fansipan was inaugurated on the morning of February 2. This is a modern three-wire cable, the first in Asia presence. The total investment in the first phase of the project is 4,400 billion VND. The distance from the Muong Hoa peaked go through 6 main pillars, each pillar being 1 km.`,
+                    `The Guinness Book of World Records has awarded two Guinness certification for the Fansipan Sapa, including a three-wire cable car station and the difference between the world’s largest arrivals (1,410 m) cable cars and the world’s longest three-wire (6292.5 m).`,
+                    `Each cable car cabin can accommodate up to 35 guests, with a transport capacity of up to 2,000 people per hour. The time to go to the gas station to just 15 minutes.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: fansipan1,
+                        imageAlt: 'Fansipan Cable Car',
+                    },
+                    {
+                        id: 2,
+                        imageSrc: fansipan2,
+                        imageAlt: 'Fansipan Cable Car',
+                    },
+                ],
+            },
+            {
+                id: 3,
+                name: 'Ham Rong Mountain',
+                description: [
+                    `Via Muong Tien to get to Sapa, in vaporous clouds travelers will see a mountain peak rising as dragon-head. It is Ham Rong mountain with 100 ha in area.`,
+                    `The name of Ham Rong was derived from the legend that, in primitive age there were a couple of dragons which became attached to each other while the deluge was rising high. Walking up, they hurrily separated from each other but failed. They were drifted to different places.`,
+                    `After a long time, the female dragon was petrified but still tried to raise its eyes to the male dragon on the Hoang Lien mountain in the west because its instinct for survival remained.As going to Sapa, travelers often climb up Ham Rong mountain to enjoy a cool atmosphere and charming landscapes such as cloud ground and stone garden, gardens, garden of medicinal plants, especially the garden of various orchids and specific houses on stilts of ethnic minorities.`,
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: hamrong,
+                        imageAlt: 'Ham Rong Mountain',
+                    },
+                ],
+            },
+
+            {
+                id: 4,
+                name: 'Bac Ha Market',
+                description: [
+                    'Perhaps more than anything else, strings of silk lanterns are the most iconic symbols of Hoi An. Imported by the Japanese, who inherited them from the Chinese, these traditional lanterns are now a solidly Vietnamese tradition that has been handcrafted in Hoi An for hundreds of years.',
+                    'During the daytime, they dangle in bright colors from doorways or stretch across in the glass windows of shopfronts, the antique city’s signature accessory.',
+                    'Take a picture during the day to capture different shapes, colors, and patterns pressed against yellow walls, but the lanterns really come alive at night. Head to Old Town just before sunset to see everything softly illuminated, pedestrians padding by underway, everyone’s eyes to the sky. When true darkness falls the lanterns glow in high contrast. Early dusk is the magic hour for catching photos of faces illuminated by the lanterns without losing the background to silhouette and shadow.',
+                ],
+                images: [{ id: 1, imageSrc: bachaMarket, imageAlt: 'Bac Ha Market' }],
+            },
+
+            {
+                id: 5,
+                name: 'Fansipan Mountain',
+                description: [
+                    `Fansipan is branded “the Roof of Indochina” at the height of 3, 143m; Fansipan Mountain is to be approved as one of the very few eco-tourist spots of Vietnam, with about 2, 024 floral varieties and 327 faunal species.The topography of Fansipan is varied. Muong Hoa Valley, at the lowest altitude (950-1, 000m), is created by a narrow strip of land at the base on the east side of the mountain.`,
+                    ` It seemed the Fansipan Tour was meant only for those who wished to test their muscular power.The summit of Fansipan is accessible all year round, but the best time to make the ascent is from mid-October to mid-November, and again in March.`,
+                    `Foreigners like best to book Fansipan tours between October and December, as this period is more often than not free from the heavy rains that obstruct the jaunt. But the Vietnamese prefer their tours to the peak of the mountain from February to April, as it is not so cold then. However, the best time for the trek to the mountain is from the end of February to the start of March, when the flowers all flourish and the climbers may behold the.`,
+                ],
+                images: [
+                    { id: 1, imageSrc: fansipan3, imageAlt: 'Fansipan Mountain' },
+                    { id: 2, imageSrc: fansipan4, imageAlt: 'Fansipan Mountain' },
+                ],
+            },
+        ],
     },
 
     {
@@ -1380,9 +1810,83 @@ export const placesToGo = [
             'Free from pollution and vehicle traffic, pedestrians stroll past golden yellow buildings where laughing women squat together to sell fresh food and handicraft from bamboo baskets under strings of silk lanterns. Horizon-bound rice paddies undulate in ten thousand shades of green or reflect the sky back to itself in a mirror of flooded fields.',
             'Hoi An was declared a UNESCO World Heritage Site in 1999, and it retains the weight and heartbeat of its centuries of commerce and culture and dreams. There is something about the city that transforms every guest into an artist or photographer. Here are some of its most photogenic and Instagram-worthy sites and scenes.',
         ],
-
+        places: [
+            {
+                id: 1,
+                name: 'Japanese Covered Bridge',
+                description: [
+                    'The Japanese Covered Bridge was built in the 16th century to connect the Chinese and Japanese quarters of the Vietnamese city. It is now such an iconic landmark of Hoi An City and Vietnam itself that it features on the 20,000 VND note. A temple on the north side is dedicated to the Taoist God of weather, lending the bridge its Vietnamese name: Chùa Cầu, the temple bridge.',
+                    'Visit early in the morning to beat the crowds and cross the bridge without paying a fee. Photos of the inside are historically interesting, with its Chinese script and its monkey and dog statue guardians. Photos of the bridge’s outside captured the delicate beauty of its architecture.',
+                    'During the daytime you can get good pictures of its fine details: carved dark wood trimmed with red lacquer and gold and stretched between two shorelines of sunshine-yellow walls. At night, the bridge glows with diffuse colored lighting, casting a crisp reflection into the water below.',
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: japaneseBridge,
+                        imageAlt: 'Yellow Walls of Hoi An',
+                    },
+                ],
+            },
+            {
+                id: 2,
+                name: 'Yellow Walls of Hoi An',
+                description: [
+                    'It is possible to spend hours wandering through the bewitching butter-yellow buttresses of the city, enchanted by goldenrod and canary, sunflower and saffron-hued Hoi An. Hoi An burns itself into the memories and photographs of visitors in this hypnotizing shade of yellow. Get lost in narrow alleys between ancient buildings that wind endlessly through the converging cityscape. ',
+                    'Blue and green doors and windows bloom open from French balconies. The wear and tear of the paint add charm and character where it reveals raw walls beneath.',
+                    'There are lots of opportunities in the narrow maze between buildings to play with scale and perspective and contrast. Wear a poppy-red dress to pose brightly against the yellow. Find a pretty spot to sit where you can set up a frame. From here, wait for bicycles or women in ao dai to ride or walk across the golden gallery walls for a truly classic cultural shot.',
+                ],
+                images: [
+                    {
+                        id: 1,
+                        imageSrc: yellowWall,
+                        imageAlt: 'Yellow Walls of Hoi An',
+                    },
+                    {
+                        id: 2,
+                        imageSrc: yellowWall1,
+                        imageAlt: 'Yellow Walls of Hoi An',
+                    },
+                    {
+                        id: 3,
+                        imageSrc: yellowWall2,
+                        imageAlt: 'Yellow Walls of Hoi An',
+                    },
+                ],
+            },
+            {
+                id: 3,
+                name: 'Temples in Old Town Hoi An',
+                description: [
+                    'Hoi An is rife with ornate temples built in a collage of architectural influences. All of them offer opportunities for beautiful photography. Pop in and out of garden courtyards, ducking under strings of lanterns and past gold and red Chinese calligraphy and engravings. ',
+                    'Some temples require a ticket to enter, but many are free. Keep an eye out for Buddhist drums and gongs; for Daoist cosmological symbols and trigrams; ornate gates, engraved altars, and painted doorways; and for carved wooden statues of spirits and dragons.',
+                    'Some of these buildings date back as far as the 14th and 15th centuries, before Japan, before China, and before Hoi An was even a Vietnamese city. The Hindu-influenced fingerprint of the Champa empire lingers in architectural examples like the My Son Sanctuary.',
+                ],
+                images: [],
+            },
+            {
+                id: 4,
+                name: 'Hoi An Lanterns',
+                description: [
+                    'Perhaps more than anything else, strings of silk lanterns are the most iconic symbols of Hoi An. Imported by the Japanese, who inherited them from the Chinese, these traditional lanterns are now a solidly Vietnamese tradition that has been handcrafted in Hoi An for hundreds of years.',
+                    'During the daytime, they dangle in bright colors from doorways or stretch across in the glass windows of shopfronts, the antique city’s signature accessory.',
+                    'Take a picture during the day to capture different shapes, colors, and patterns pressed against yellow walls, but the lanterns really come alive at night. Head to Old Town just before sunset to see everything softly illuminated, pedestrians padding by underway, everyone’s eyes to the sky. When true darkness falls the lanterns glow in high contrast. Early dusk is the magic hour for catching photos of faces illuminated by the lanterns without losing the background to silhouette and shadow.',
+                ],
+                images: [{ id: 1, imageSrc: lanterns, imageAlt: 'Hoi An Lanterns' }],
+            },
+            {
+                id: 5,
+                name: 'Faifo Coffee',
+                description: [
+                    'Most of the best shots of Hoi An happen at the street level, but Faifo Coffee shop is a delightful exception. This cafe is one of the only buildings in Hoi An with a rooftop terrace, so the expansive view it offers across the rooftops of the city is truly unique. ',
+                    'On a bright and sunny day, the yellow buildings with their brown roofs ripple-like sharp and triangular waves against the blue sky, all the way out to the horizon.',
+                    'The coffee is thankfully as good as the views, so it’s worth waiting for the perfect shot. The rooftop can get crowded with people posing for their own selfies, so be patient and enjoy the atmosphere and the view while you wait for your own photoshoot. That’s the point, anyway, isn’t it?',
+                ],
+                images: [{ id: 1, imageSrc: faifo, imageAlt: 'Faifo Coffee' }],
+            },
+        ],
     },
 ];
+
 
 export const reviews = [
     {

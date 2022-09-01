@@ -7,7 +7,7 @@ function TourGallery({ images }) {
         <div className="border-b-2 py-10 overflow-hidden">
             <div className="img-main">
                 <img src={imageSrc} alt=""
-                    className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover hover:scale-110 transition duration-500 ease-in"
+                    className="img-container"
                 />
             </div>
             <div className="grid grid-cols-5 gap-x-2 mt-4">

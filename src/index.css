@@ -62,4 +62,7 @@ html {
   .verticalRight {
     @apply border-l-4 border-gray-500 pl-4 my-6 italic rounded font-semibold;
   }
+  .img-container {
+    @apply w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover hover:scale-110 transition duration-500 ease-in;
+  }
 }

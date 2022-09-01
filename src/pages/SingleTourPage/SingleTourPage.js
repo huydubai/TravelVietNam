@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { TourGallery, Accordion } from "../../components/ContentTourPage";
-import { reviews, tours } from "../../data";
+import { tours } from "../../data";
 import Stars from '../../components/Content/Reviews/Stars'
 
 function SingleTourPage() {
