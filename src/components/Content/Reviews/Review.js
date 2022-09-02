@@ -3,8 +3,8 @@ import Stars from './Stars.js'
 function Review({ review }) {
     const { imageSrc, name, comment, stars, from } = review
     return (
-        <div className="">
-            <div className="flex justify-center mb-6">
+        <div className="xl:mt-0 mt-4">
+            <div className="flex justify-center mb-2">
                 <img src={imageSrc} alt={name} className='rounded-full shadow-lg w-32 h-32' />
             </div>
             <h5 className="text-xl font-semibold mb-4">{name}</h5>

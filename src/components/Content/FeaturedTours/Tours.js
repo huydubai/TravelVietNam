@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 function Tours({ color, tours, extraCol }) {
     return (
-        <div className={`grid-container ${extraCol ? 'xl:grid-cols-4 xl:gap-x-6' : 'lg:grid-cols-3'}`}>
+        <div className={`grid-container ${extraCol ? 'xl:grid-cols-4 xl:gap-x-4' : 'lg:grid-cols-3'}`}>
             {tours.map(tour => (
                 <div key={tour.id} className={`group bg-${color}-200 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition duration-300 ease-in-out overflow-hidden  `}>
                     <Link to={`/tours/${tour.name}`}>
                         <div className="relative h-60 bg-gray-500 rounded-t-lg overflow-hidden">
                             <img src={tour.imageSrc} alt={tour.imageAlt}
-                                className="w-full h-full object-center object-cover group-hover:opacity-75 group-hover:scale-110 transition duration-300"
+                                className="w-full h-full object-center object-cover lg:group-hover:opacity-75 lg:group-hover:scale-110 transition duration-300"
                             />
                             <p className="absolute right-0 bottom-0 sm:text-lg bg-white capitalize font-bold italic rounded-tl-xl py-2 px-4">
                                 {tour.startDate}

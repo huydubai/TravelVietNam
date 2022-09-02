@@ -3,10 +3,31 @@ import ticketIcon from './assets/icons/icon2.svg'
 import rentalsIcon from './assets/icons/icon3.svg'
 import toursIcon from './assets/icons/icon4.svg'
 import guideIcon from './assets/icons/icon5.svg'
+
+// Tips
 import visaIcon from './assets/icons/icon6.svg'
 import weatherIcon from './assets/icons/icon7.svg'
 import safetyIcon from './assets/icons/icon8.svg'
 import historyIcon from './assets/icons/icon9.svg'
+
+import weatherHL from './assets/Tips/Weather/weather.jpg'
+import weatherHN from './assets/Tips/Weather/weather1.jpg'
+import weatherSP from './assets/Tips/Weather/weather2.jpg'
+import weatherHue from './assets/Tips/Weather/weather3.jpg'
+import weatherHA from './assets/Tips/Weather/weather4.jpg'
+import weatherNT from './assets/Tips/Weather/weather5.jpg'
+import weatherDL from './assets/Tips/Weather/weather6.jpg'
+import weatherHCM from './assets/Tips/Weather/weather7.jpg'
+import weatherPQ from './assets/Tips/Weather/weather8.jpg'
+
+import historySrc from './assets/Tips/History/historySrc.jpg'
+import history from './assets/Tips/History/history.jpg'
+import history1 from './assets/Tips/History/history1.jpg'
+import history2 from './assets/Tips/History/history2.jpg'
+import history3 from './assets/Tips/History/history3.jpg'
+import history4 from './assets/Tips/History/history4.jpg'
+import history5 from './assets/Tips/History/history5.jpg'
+
 
 //  Images tours
 import halong1 from './assets/Tours/halong/halong1.jpg'
@@ -101,14 +122,14 @@ import placesSP from './assets/Places/sapa.jpg'
 import placesHA from './assets/Places/hoian.jpg'
 
 
-import warMuseum from './assets/Tours/detailPlaces/warMuseum.jpg'
-import puppetShow from './assets/Tours/detailPlaces/puppetShow.jpg'
+import warMuseum from './assets/Places/detailPlaces/warMuseum.jpg'
+import puppetShow from './assets/Places/detailPlaces/puppetShow.jpg'
 
-import oldQuaters from './assets/Tours/detailPlaces/oldQuaters.jpg'
-import hoankiem from './assets/Tours/detailPlaces/hoankiem.jpg'
-import literatureTemple from './assets/Tours/detailPlaces/literatureTemple.jpg'
-import hcmmauseleum from './assets/Tours/detailPlaces/hcmmauseleum.jpg'
-import ethnologyMuseum from './assets/Tours/detailPlaces/ethnologyMuseum.jpg'
+import oldQuaters from './assets/Places/detailPlaces/oldQuaters.jpg'
+import hoankiem from './assets/Places/detailPlaces/hoankiem.jpg'
+import literatureTemple from './assets/Places/detailPlaces/literatureTemple.jpg'
+import hcmmauseleum from './assets/Places/detailPlaces/hcmmauseleum.jpg'
+import ethnologyMuseum from './assets/Places/detailPlaces/ethnologyMuseum.jpg'
 
 import beaches from './assets/Places/detailPlaces/beaches.jpg'
 import sontra1 from './assets/Places/detailPlaces/sontra1.jpg'
@@ -1988,12 +2009,34 @@ export const blogs = [
 ];
 
 export const tips = [
-    { id: 1, title: 'visa', icon: visaIcon },
-    { id: 2, title: 'transport', icon: rentalsIcon },
-    { id: 3, title: 'weather', icon: weatherIcon },
-    { id: 4, title: 'safety', icon: safetyIcon },
-    { id: 5, title: 'history', icon: historyIcon },
+    {
+        id: 1,
+        title: 'visa',
+        icon: visaIcon,
+    },
+    {
+        id: 2,
+        title: 'transport',
+        icon: rentalsIcon,
+    },
+    {
+        id: 3,
+        title: 'weather',
+        icon: weatherIcon,
+    },
+    {
+        id: 4,
+        title: 'safety',
+        icon: safetyIcon,
+    },
+    {
+        id: 5,
+        title: 'history',
+        icon: historyIcon,
+    },
 ];
+
+
 
 export const features = [
     {
@@ -2017,3 +2060,404 @@ export const features = [
         icon: heartIcon,
     },
 ];
+
+export const weathers = [
+    {
+        id: 1,
+        title: 'Halong Bay',
+        imageSrc: weatherHL,
+        info: [
+            {
+                id: 1,
+                stage: 'December - March',
+                type: 'cool to cold, misty, cloudy'
+            },
+            {
+                id: 2,
+                stage: 'April - June',
+                type: 'warm to hot, clear skies, sunny'
+            },
+            {
+                id: 3,
+                stage: 'June - August',
+                type: 'stormy, hot, humid'
+            },
+            {
+                id: 4,
+                stage: 'September - November',
+                type: 'mix of sun and clouds, warm to cool'
+            }
+        ],
+        desc: [
+            'If you’re coming to Halong Bay, try to visit from April to June or September to November. You’ll have a better chance of enjoying sunny skies and pleasant temperatures. Other times of year, downpour or heavy mist is common, and tropical storms can sometimes cause cruise cancellations.',
+            'However, if you’re on the water during this time you can experience a more mystical side of Halong Bay, with its famous karsts shrouded in mist. Temperatures in January can be frigid, so be sure to bring warm layers.'
+        ]
+    },
+    {
+        id: 2,
+        title: 'Ha Noi',
+        imageSrc: weatherHN,
+        info: [
+            {
+                id: 1,
+                stage: 'December - March',
+                type: 'cool to cold, misty, cloudy'
+            },
+            {
+                id: 2,
+                stage: 'April - June',
+                type: 'warm to hot, clear skies, sunny'
+            },
+            {
+                id: 3,
+                stage: 'June - August',
+                type: 'hot, humid, rainy'
+            },
+            {
+                id: 4,
+                stage: 'September - November',
+                type: 'cool, clear skies, sunny'
+            }
+        ],
+        desc: [
+            'The best time to visit Hanoi is usually from April to June or from September to December. From April the days are normally hot, occasionally above 30 degrees with clear skies. September to November sees cooler temperatures of around 25 degrees and sunny skies -- perfect for exploring the capital.',
+            'If you’re coming to Hanoi in June, expect soaring temperatures with humidity highs of 40 degrees, and the rainy season is full swing (June to August). December is cool, misty and atmospheric, however from late December until March temperatures are surprisingly cold with lows of 10 degrees. You’ll want to bundle up.'
+        ]
+    },
+    {
+        id: 3,
+        title: 'Sa Pa',
+        imageSrc: weatherSP,
+        info: [
+            {
+                id: 1,
+                stage: 'December - March',
+                type: 'chilly, misty, cloudy'
+            },
+            {
+                id: 2,
+                stage: 'April - June',
+                type: 'warm, clear skies, sunny'
+            },
+            {
+                id: 3,
+                stage: 'June - August',
+                type: 'stormy, warm, humid'
+            },
+            {
+                id: 4,
+                stage: 'September - November',
+                type: 'cool, clear skies, dry'
+            }
+        ],
+        desc: [
+            'Vietnam’s Northern destinations such as Sapa have a much cooler climate than the rest of the country, particularly from late December until March. Sapa sees the occasional snowfall in January, so be prepared. Hotels in the area are equipped with heated blankets and local spas offer herbal baths for you to soak in and warm up.',
+            'Sapa is near-perfect in late April, as flowers bloom and skies are clear. Early October is also lovely, as its impressive tiered rice paddies turn golden just before harvest.'
+        ]
+    },
+    {
+        id: 4,
+        title: 'Hue',
+        imageSrc: weatherHue,
+        info: [
+            {
+                id: 1,
+                stage: 'September-February',
+                type: 'cool to cold, rainy, cloudy'
+            },
+            {
+                id: 2,
+                stage: 'March-August',
+                type: 'warm to hot, sunny, clear skies'
+            }
+        ],
+        desc: [
+            'Huế, home of Vietnam’s last reigning dynasty, has a late rainy season, with storms and days that are wet and cool from September to February. Look out for occasional flooding from September to November. In the early months of the year, temperatures go down to 15 degrees, and January often sees a bit of mist. The rest of the year is dry, and in July you’ll have perfect beach weather, with highs of 35 degrees.',
+            'In the late months of the year, from September to November, Hội An sees a lot of rain and even a few small floods. The temperatures begin to dip and reach their coldest point in January, warming up just before the Vietnamese new year.'
+        ]
+    },
+    {
+        id: 5,
+        title: 'Hoi An',
+        imageSrc: weatherHA,
+        info: [
+            {
+                id: 1,
+                stage: 'September-February',
+                type: 'rainy, cool, cloudy'
+            },
+            {
+                id: 2,
+                stage: 'March-August',
+                type: 'warm to hot, sunny, clear skies'
+            }
+        ],
+        desc: [
+            'Hội An is one of the country’s picture-perfect places, but starting in September, tropical storms hit Central Vietnam hard. March is an excellent time to see Hội An when the fields, gardens and streets are awash in bright blossoms and soothing greens. From May to August, the town can be hot, and you’ll want to head to the beach to cool off.',
+            'In the late months of the year, from September to November, Hội An sees a lot of rain and even a few small floods. The temperatures begin to dip and reach their coldest point in January, warming up just before the Vietnamese new year.'
+        ]
+    },
+    {
+        id: 6,
+        title: 'Nha Trang',
+        imageSrc: weatherNT,
+        info: [
+            {
+                id: 1,
+                stage: 'September-February',
+                type: 'rainy, cool, cloudy'
+            },
+            {
+                id: 2,
+                stage: 'March-August',
+                type: 'warm to hot, sunny, clear skies'
+            }
+        ],
+        desc: [
+            'Nha Trang is one of the country’s picture-perfect places, but starting in September, tropical storms hit Central Vietnam hard. March is an excellent time to see Hội An when the fields, gardens and streets are awash in bright blossoms and soothing greens. From May to August, the town can be hot, and you’ll want to head to the beach to cool off.',
+            'n the late months of the year, from September to November, Hội An sees a lot of rain and even a few small floods. The temperatures begin to dip and reach their coldest point in January, warming up just before the Vietnamese new year.'
+        ]
+    },
+    {
+        id: 7,
+        title: 'Da Lat',
+        imageSrc: weatherDL,
+        info: [
+            {
+                id: 1,
+                stage: 'April - October',
+                type: 'rainy, warm to hot, cloudy'
+            },
+            {
+                id: 2,
+                stage: 'November - May',
+                type: 'cool to cold, dry, clear skies'
+            }
+        ],
+        desc: [
+            'Nestled in the central highlands, this charming mountain city is appreciated for its temperate climate. The air in Da Lat is always fresh and crisp. The mountains provide consistent cool temperatures and pleasant breeze, making it a great spot to escape the heat of the cities',
+            'Da Lat’s rainy season is from April until October. Temperatures are generally consistent with lows of 20 degrees in January and highs of 30 degrees in July.'
+        ]
+    },
+    {
+        id: 8,
+        title: 'HCMC & the Mekong Delta',
+        imageSrc: weatherHCM,
+        info: [
+            {
+                id: 1,
+                stage: 'May to November',
+                type: 'sporadic rainfall, hot, humid'
+            },
+            {
+                id: 2,
+                stage: 'December to April',
+                type: 'clear skies, hot, sunny'
+            }
+        ],
+        desc: [
+            'Southern Vietnam and Hồ Chí Minh city have consistent temperatures year-round. HCMC is either hot and dry or hot and rainy, although there are some pleasant fresh days early in the year, and some scorching days mid-year.',
+            'Temperatures are normally around 30 degrees, with sunshine. From May to November, the wet season brings a dependable afternoon downpour, usually lasting a few hours.'
+        ]
+    },
+    {
+        id: 9,
+        title: 'Phú Quốc',
+        imageSrc: weatherPQ,
+        info: [
+            {
+                id: 1,
+                stage: 'July - September',
+                type: 'stormy, hot, humidid'
+            },
+            {
+                id: 2,
+                stage: 'October - June',
+                type: 'clear skies, hot, sunny'
+            }
+        ],
+        desc: [
+            'The island of Phú Quốc has some of Vietnam’s best beaches and promises balmy weather year-round. However, you might want to avoid visiting in the rainy season, from July through September.',
+            'During these months some storms roll through, making ferrying dangerous and the beaches less than ideal. The rest of the year is hot and dry, and Phú Quốc is a sublime tropical escape in December and January.'
+        ]
+    },
+
+]
+
+
+export const histories = [
+    {
+        id: 1,
+        title: 'Dynastic Rules (2nd to 15th centuries)',
+        imageSrc: historySrc,
+        notice: 'Places to discover:',
+        info: [
+            'Throughout its history, many dynasties ruled over Vietnam in between periods of Chinese occupation. There are four main dynasties to note: the Ly, the Tran, the Le, and the Nguyen. First, the Ly Dynasty drove out the Chinese, ending a thousand year-long rule, and set up a centralized the government in Hanoi.',
+            'Then came the Tran Dynasty, which repelled a Mongol attack in the Red River Delta under the command of general Tran Hung Dao. These two dynasties helped build the foundation of Vietnam, as people with long-standing love for their land.'
+        ],
+        desc: [
+            {
+                id: 1,
+                place: 'Thang Long Citadel (Hanoi)',
+                content: 'To unearth more about the dynastic history of Vietnam, explore the ruins of this royal enclosure, originally built during the Ly Dynasty.'
+            },
+            {
+                id: 2,
+                place: 'Temple of Literature (Hanoi)',
+                content: 'Take a stroll through the city’s first university, established in 1070. This serene and historic structure is located just west of the Old Quarter.'
+            },
+            {
+                id: 3,
+                place: 'One Pillar Pagoda (Hanoi)',
+                content: 'This sacred monument was erected by an emperor in gratitude for the birth of his son.'
+            }
+        ],
+    },
+    {
+        id: 2,
+        title: 'The Le Dynasty Pushes South (15th to 17th centuries)',
+        imageSrc: history,
+        notice: 'Places to discover:',
+        info: [
+            'China invaded Vietnam again at the turn of the 15th century, but this period did not last nearly as long as the previous occupation. Le Loi, a wealthy landowner, managed to lead a resistance and reclaim Vietnam.',
+            'This established the Le Dynasty, which succeeded in expanding southward, gaining control over the former Champa Kingdom. The Cham were an ethnic group from the Indian sub-continent, that lived in central and southern Vietnam from the 2nd century. A strong kingdom with mercantile skills, they were eventually defeated and driven into the depths of the Mekong Delta'
+        ],
+        desc: [
+            {
+                id: 1,
+                place: 'Cham towers and complexes (Central Vietnam)',
+                content: 'Discover the vast and fascinating ruins of My Son sanctuary a few kilometres outside of Hoi An. Visit the Po Nagar towers in central Nha Trang or the Po Shanu towers a short drive from Mui Ne town.'
+            },
+            {
+                id: 2,
+                place: 'Museum of Cham Sculpture (Da Nang)',
+                content: 'Founded during the French colonial rule, this charming building hosts incredible displays of Cham relics and sculptures.'
+            }
+        ],
+    },
+    {
+        id: 3,
+        title: 'The Last Dynasty (19th Century)',
+        imageSrc: history1,
+        notice: 'Places to discover:',
+        info: [
+            'The Nguyens came into power during a divisive civil conflict that had left Vietnam fractured. Under the leadership of Emperor Gia Long, the country was reunited and in 1802, Gia Long constructed a new feudal capital in the city of Hue in Central Vietnam.',
+            'During the reign of the Nguyen Emperors, French influence in Vietnam grew under the pretext of religious reform and evangelicalism. Eventually, the French established control over the whole of Vietnam, adding the central and northern regions to the rest of their conquests (neighbouring Laos and Cambodia). The last Nguyen emperor, Bao Dai, formally abdicated his throne.'
+        ],
+        desc: [
+            {
+                id: 1,
+                place: 'Imperial City (Hue)',
+                content: 'Explore the legacy of the Nguyen Dynasty with a walk around the Hue Citadel and Imperial City, one of Vietnam’s top historical attractions.'
+            },
+            {
+                id: 2,
+                place: 'Royal Tombs (Hue)',
+                content: 'Make time to visit the grandiose tombs of the Nguyen Emperors, each one different from the others, and designed by the Nguyen emperors before their deaths.'
+            }
+        ],
+    },
+    {
+        id: 4,
+        title: 'French Colonisation (late 19th to early 20th century)',
+        imageSrc: history2,
+        notice: 'Places to discover:',
+        info: [
+            'During the French colonisation of Vietnam, the country was divided into three protectorates: Tonkin, Annam and Cochinchine. Throughout French rule, resistance brewed among the Vietnamese.',
+            'At the turn of the century many notable Vietnamese writers published works calling for solidarity and freedom from colonial rule. These ideas were temporarily silenced but not forgotten. Despite mass arrests by the French, many Vietnamese nationalists used imprisonment to spread their cause and mobilize for the future.'
+        ],
+        desc: [
+            {
+                id: 1,
+                place: 'Con Dao Prison Complex (Con Dao Island)',
+                content: 'While enjoying the beaches of Con Dao Island, visit the prison complex to unearth stories about its tragic past.'
+            },
+            {
+                id: 2,
+                place: 'Hoa Lo Prison (Hanoi)',
+                content: 'This urban prison, a short walk from Hoan Kiem lake, was dubbed the ‘fiery furnace’ by locals.'
+            },
+            {
+                id: 3,
+                place: 'French Quarter (Hanoi)',
+                content: 'Take a stroll around Hoan Kiem District to encounter many well-preserved French villas, as well as other architectural relics from the French colonisation, including Long Bien Bridge and the Metropole Hotel.'
+            }
+        ],
+    },
+    {
+        id: 5,
+        title: 'Invasion to Independence (early to mid-20th century)',
+        imageSrc: history3,
+        notice: 'Places to discover:',
+        info: [
+            'When France was occupied by Germany, Japan seized the opportunity to invade Vietnam. This strategic move resulted in Japanese forces taking control of Hanoi in 1940.',
+            'A year later they moved further south, along the way awakening remaining elements of the Vietnamese resistance and spurring communists and nationalists to band together to form the Viet Minh under Ho Chi Minh. The Viet Minh destabilized the Japanese, and by 1945, Japan surrendered to Allied forces on the same day Ho Chi Minh declared Vietnam an independent nation in Hanoi’s Ba Dinh Square.'
+        ],
+        desc: [
+            {
+                id: 1,
+                place: 'Cannon Fort (Cat Ba)',
+                content: 'This hilltop fort was built by the Japanese after their invasion of Cat Ba. Discover more about this event and enjoy the views of the port and jungle below.'
+            },
+            {
+                id: 2,
+                place: 'Ba Dinh Square (Hanoi)',
+                content: 'Visit this iconic square in front of the Ho Chi Minh Mausoleum, before checking out the Presidential Palace and Ho Chi Minh’s stilt house.'
+            },
+        ],
+    },
+    {
+        id: 6,
+        title: 'The Indochina Wars & Reunification (mid-20th century)',
+        imageSrc: history4,
+        notice: 'Places to discover:',
+        info: [
+            'Resistance to French colonial rule came to a head when the First Indochina War began in 1946. The war lasted until a stark defeat at the Battle of Dien Bien Phu. After a ceasefire was signed, Vietnam was divided at the 17th parallel, setting the stage for a war that would capture worldwide attention.',
+            'American involvement in South Vietnam had begun well beforehand, and as the United States committed more and more forces to the war effort, so did North Vietnam. The Tet Offensive marked a turning point for north, and ultimately American forces retreated from Saigon as the city was taken by North Vietnamese troops on April 30, 1975.'
+        ],
+        desc: [
+            {
+                id: 1,
+                place: 'War Remnants Museum (Ho Chi Minh City) ',
+                content: 'This museum showcases the harsh reality of the war through the lenses of renowned photographers on both sides of the conflict.'
+            },
+            {
+                id: 2,
+                place: 'Reunification Palace (Ho Chi Minh City)',
+                content: 'Take a stroll around this former seat of power for the Republic of Vietnam. The day the Viet Cong tanks crashed through the gates of the palace marked the end of the war.'
+            },
+            {
+                id: 3,
+                place: 'Cu Chi Tunnels',
+                content: ' These underground tunnels outside Ho Chi Minh City reveal how the Viet Cong guerrilla forces survived and waged war under remarkable conditions.'
+            },
+        ],
+    },
+    {
+        id: 7,
+        title: 'Doi Moi & Vietnam Now (late 20th century to the present)',
+        imageSrc: history5,
+        notice: 'Places to discover:',
+        info: [
+            'After the Second Indochina War, the country went through a period of adjustment and reunification. In 1986, the Vietnamese government introduced its ‘Doi Moi’ (renewal) policy nationwide. These reforms resulted in gradual economic growth, as more and more Vietnamese began to open businesses.',
+            'Recently, Vietnam has seen a boom in development, and is one of the region’s fastest-growing economies. The country offers is a fascinating mix of old and new, with compelling historical attractions and a deeply rooted sense of appreciation for its past.'
+        ],
+        desc: [
+            {
+                id: 1,
+                place: 'War Remnants Museum (Ho Chi Minh City) ',
+                content: 'This museum showcases the harsh reality of the war through the lenses of renowned photographers on both sides of the conflict.'
+            },
+            {
+                id: 2,
+                place: 'Reunification Palace (Ho Chi Minh City)',
+                content: 'Take a stroll around this former seat of power for the Republic of Vietnam. The day the Viet Cong tanks crashed through the gates of the palace marked the end of the war.'
+            },
+            {
+                id: 3,
+                place: 'Cu Chi Tunnels',
+                content: ' These underground tunnels outside Ho Chi Minh City reveal how the Viet Cong guerrilla forces survived and waged war under remarkable conditions.'
+            },
+        ],
+    },
+]

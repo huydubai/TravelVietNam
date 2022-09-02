@@ -56,8 +56,8 @@ function Header() {
                         </svg>
                     </button>
                     {isMenuOpen && (
-                        <div className="absolute animate-fade-in-down top-0 left-0 w-full p-6 border rounded shadow-sm bg-green-50">
-                            <div className="flex justify-between">
+                        <div className="absolute animate-fade-in-down top-0 left-0 w-full pt-6 border rounded shadow-sm bg-green-50">
+                            <div className="flex justify-between px-4">
                                 <Link to="/" className='flex items-center'>
                                     <img src={logo} alt="" className='w-8 h-8' />
                                     <span className='company-name'>Travel VietNam</span>
@@ -75,7 +75,7 @@ function Header() {
                                 </button>
                             </div>
                             <nav className="text-left">
-                                <ul className='py-4'>
+                                <ul className='pt-4'>
                                     <HeaderLink links={leftLinks} setIsMenuOpen={setIsMenuOpen} />
                                     <HeaderLink links={rightLinks} setIsMenuOpen={setIsMenuOpen} />
                                 </ul>

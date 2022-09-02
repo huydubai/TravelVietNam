@@ -1,3 +1,8 @@
 export { default as Home } from './Home'
 export { default as SingleTourPage } from './SingleTourPage'
 export { default as SinglePlacePage } from './SinglePlacePage'
+export { default as VisaTipPage } from './VisaTipPage'
+export { default as TransportTipPage } from './TransportTipPage'
+export { default as WeatherTipPage } from './WeatherTipPage'
+export { default as SafetyTipPage } from './SafetyTipPage'
+export { default as HistoryTipPage } from './HistoryTipPage'

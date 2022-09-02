@@ -9,7 +9,7 @@ function SingleTourPage() {
         return tour.name === id
     })
     return (
-        <section className='section pt-20 bg-gray-50'>
+        <section className='section pt-20 bg-green-50'>
             <section className='section-center'>
                 <TourGallery images={singleTour.images} />
 

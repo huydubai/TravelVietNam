@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import ImageHeader from "../../components/ContentTourPage/ImageHeader";
 import { placesToGo } from "../../data";
 
 
@@ -9,11 +10,7 @@ function SinglePlacePage() {
     return (
         <div className="section bg-green-50">
             <div className="section-center">
-                <div className="img-main">
-                    <img src={imageSrc} alt=""
-                        className="img-container"
-                    />
-                </div>
+                <ImageHeader imageSrc={imageSrc} />
                 <div className="text-center my-3">
                     <h1 className='text-3xl italic font-bold sm:text-4xl'>{name}</h1>
                     <p className="text-xl sm:text-2xl mt-2">Best places to visit in {name}</p>

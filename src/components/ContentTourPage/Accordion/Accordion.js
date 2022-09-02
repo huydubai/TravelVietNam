@@ -41,12 +41,12 @@ function Accordion({ title, infor, active }) {
             </header>
             {showInfo && title === 'Itinerary' &&
                 infor.map((info, index) => (
-                    <div key={index}>
+                    <div key={index} className='ml-2'>
                         <h3 className="mt-4 text-lg font-bold">
                             Day {index + 1}: {info.highLight}
                         </h3>
                         {info.details.map((desc, i) => (
-                            <p key={i} className='px-2 my-3'>- {desc}</p>
+                            <p key={i} className='pl-3 my-3'>- {desc}</p>
                         ))}
                     </div>
                 ))}
@@ -54,7 +54,7 @@ function Accordion({ title, infor, active }) {
                 <ul className='list-disc'>
                     {infor.map((info, index) => (
                         <li key={index}
-                            className='my-2 ml-6 px-2'
+                            className='my-2 ml-8 px-2'
                         >{info}</li>
                     ))}
                 </ul>
