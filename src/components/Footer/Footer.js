@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import footerImg from '../../assets/footerImg.jpg'
 function Footer() {
     return (
