@@ -29,7 +29,7 @@ function HistoryTipPage() {
                             <p className='notice'>{history.notice}</p>
                             <ul className='pl-2'>
                                 {history.desc.map(des => (
-                                    <li><span className='font-bold'>{des.place}</span>
+                                    <li key={des.id}><span className='font-bold'>{des.place}</span>
                                         :
                                         <span>{des.content}</span></li>
                                 ))}
